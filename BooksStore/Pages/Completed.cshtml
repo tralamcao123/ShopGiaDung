@@ -1,0 +1,10 @@
+﻿@page
+<div class="text-center">
+    <h3>Cảm Ơn Quý Khách #@OrderId</h3>
+    <p>Chúng tôi sẽ gửi hàng cho bạn trong thời gian sớm nhất.</p>
+    <a class="btn btn-info" asp-controller="Home">Trở lại cửa hàng</a>
+</div>
+@functions {
+    [BindProperty(SupportsGet = true)]
+    public string OrderId { get; set; }
+}
